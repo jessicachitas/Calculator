@@ -3,32 +3,33 @@
 <head>
     <title>Calculator!</title>
     <link href="Calculator.css" rel="stylesheet"></link>
+    
 </head>
-<body>
+<body bgcolor="#580C1F">
     <table>
 
-            <td colspan="4" ><font size="10"><button onclick="clearInput()">C</button></td>
-            <td ><input id="screenInput" type="text" value="" readonly></input></td>
+            <td><font size="10"><button onclick="clearInput()">C</button></td>
+            <td colspan="3"><center><input id="screenInput" type="text" value="" readonly></input></center></td>
         <tr>
-            <td id="7" ><button onclick="addNumberToInput('7')">7</button></td>
-            <td id="8" ><button onclick="addNumberToInput('8')">8</button></td>
-            <td id="9" ><button onclick="addNumberToInput('9')">9</button></td>
-            <td id="+" ><button onclick="addOperatorToInput('+')">+</button></td>
+            <td id="7"><button onclick="addNumberToInput('7')">7</button></td>
+            <td id="8"><button onclick="addNumberToInput('8')">8</button></td>
+            <td id="9"><button onclick="addNumberToInput('9')">9</button></td>
+            <td id="+"><button onclick="addOperatorToInput('+')">+</button></td>
         <tr>
-            <td id="4" ><button  onclick="addNumberToInput('4')">4</button></td>
-            <td id="5" ><button onclick="addNumberToInput('5')">5</button></td>
-            <td id="6" ><button onclick="addNumberToInput('6')">6</button></td>
-            <td id="-" ><button onclick="addOperatorToInput('-')">-</button></td>
+            <td id="4"><button  onclick="addNumberToInput('4')">4</button></td>
+            <td id="5"><button onclick="addNumberToInput('5')">5</button></td>
+            <td id="6"><button onclick="addNumberToInput('6')">6</button></td>
+            <td id="-"><button onclick="addOperatorToInput('-')">-</button></td>
         <tr>
-            <td id="1" ><button onclick="addNumberToInput('1')">1</button></td>
-            <td id="2" ><button onclick="addNumberToInput('2')">2</button></td>
-            <td id="3" ><button onclick="addNumberToInput('3')">3</button></td>
-            <td id="÷" ><button onclick="addOperatorToInput('/')">÷</button></td>
+            <td id="1"><button onclick="addNumberToInput('1')">1</button></td>
+            <td id="2"><button onclick="addNumberToInput('2')">2</button></td>
+            <td id="3"><button onclick="addNumberToInput('3')">3</button></td>
+            <td id="÷"><button onclick="addOperatorToInput('/')">÷</button></td>
         <tr>
-            <td id="." ><button onclick="addNumberToInput('.')">.</button></td>
-            <td id="0" ><button onclick="addNumberToInput('0')">0</button></td>
-            <td id="=" ><button onclick="equalsInput('=')">=</button></td>
-            <td id="x" ><button onclick="addOperatorToInput('*')">x</button></td>
+            <td id="."><button onclick="addNumberToInput('.')">.</button></td>
+            <td id="0"><button onclick="addNumberToInput('0')">0</button></td>
+            <td id="="><button onclick="equalsInput('=')">=</button></td>
+            <td id="×"><button onclick="addOperatorToInput('*')">×</button></td>
             </font>
     </table>
 </body>
