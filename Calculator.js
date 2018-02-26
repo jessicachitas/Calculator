@@ -2,13 +2,16 @@ var inputScreen = document.getElementById("screenInput");
 var equation = "";
 
 function addNumberToInput(number) {
-    var input = inputScreen.value;
-    inputScreen.value = input + number;
+    inputScreen.value += number;
 }
 function addOperatorToInput(operator) {
-    var input = inputScreen.value;
-    equation += inputScreen.value + operator;
+    inputScreen.value += operator;
 }
 function clearInput(clear) {
     inputScreen.value = ""
+    equation = ""
+}
+function equalsInput(equation) {
+    var x = eval(inputScreen.value)
+    inputScreen.value = x;
 }
